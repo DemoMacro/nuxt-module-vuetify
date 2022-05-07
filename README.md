@@ -26,7 +26,7 @@ $ pnpm add -D nuxt-module-vuetify
 import { defineNuxtConfig } from "nuxt";
 
 export default defineNuxtConfig({
-  modules: ["vuetify-next"],
+  modules: ["nuxt-module-vuetify"],
   vuetify: {
     // VuetifyOptions
   },

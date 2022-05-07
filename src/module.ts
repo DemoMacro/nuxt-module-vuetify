@@ -8,7 +8,7 @@ export interface ModuleOptions {
 
 export default defineNuxtModule<ModuleOptions>({
   meta: {
-    name: "vuetify-next",
+    name: "nuxt-module-vuetify",
     configKey: "vuetify",
   },
   setup(options, nuxt) {
