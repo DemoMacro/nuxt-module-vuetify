@@ -2,7 +2,7 @@
   "name": "nuxt-module-vuetify",
   "version": "0.0.0",
   "description": "Vuetify module for Nuxt 3 powered by Demo Macro.",
-  "main": "./dist/module.mjs",
+  "main": "./dist/module.cjs",
   "types": "./dist/types.d.ts",
   "exports": {
     ".": {
@@ -14,7 +14,7 @@
     "dist"
   ],
   "scripts": {
-    "dev": "nuxt dev playground",
+    "dev": "pnpm prepack && nuxt dev playground",
     "dev:build": "nuxt build playground",
     "dev:prepare": "nuxt-module-build --stub && nuxt prepare playground",
     "lint:js": "eslint --ext \".js,.mjs,.ts\" --ignore-path .gitignore",
