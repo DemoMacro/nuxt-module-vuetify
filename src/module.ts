@@ -1,4 +1,9 @@
-import { defineNuxtModule, addPlugin, createResolver } from "@nuxt/kit";
+import {
+  defineNuxtModule,
+  addPlugin,
+  createResolver,
+  extendViteConfig,
+} from "@nuxt/kit";
 import { VuetifyOptions } from "vuetify";
 
 export default defineNuxtModule({
@@ -9,8 +14,9 @@ export default defineNuxtModule({
   setup(options, nuxt) {
     nuxt.options.build.transpile.push("vuetify");
 
-    nuxt.hook("vite:extend", ({ config }) => {
-      config.define["process.env.DEBUG"] = false;
+    extendViteConfig((config) => {
+      config.define ||= {};
+      config.define["process.env.DEBUG"] ||= false;
     });
 
     // Create resolver to resolve relative paths
