@@ -63,7 +63,7 @@
     "@nuxt/module-builder": "latest",
     "eslint": "latest",
     "lint-staged": "^12.4.1",
-    "nuxt": "3.0.0-rc.2",
+    "nuxt": "3.0.0-rc.3",
     "prettier": "^2.6.2"
   }
 }
