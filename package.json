@@ -14,7 +14,7 @@
     "dist"
   ],
   "scripts": {
-    "dev": "pnpm prepack && nuxt dev playground",
+    "dev": "pnpm dev:prepare && nuxt dev playground",
     "dev:build": "nuxt build playground",
     "dev:prepare": "nuxt-module-build --stub && nuxt prepare playground",
     "lint:js": "eslint --ext \".js,.mjs,.ts\" --ignore-path .gitignore",

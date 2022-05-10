@@ -12,6 +12,7 @@ export default defineNuxtModule({
     configKey: "vuetify",
   },
   setup(options, nuxt) {
+    nuxt.options.css.push("vuetify/styles/main.sass");
     nuxt.options.build.transpile.push("vuetify");
 
     extendViteConfig((config) => {
