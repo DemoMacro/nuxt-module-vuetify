@@ -7,6 +7,10 @@ export default defineNuxtModule<VuetifyOptions>({
   meta: {
     name: "nuxt-module-vuetify",
     configKey: "vuetify",
+    // Compatibility constraints
+    compatibility: {
+      nuxt: "^3.0.0",
+    },
   },
   setup(options, nuxt) {
     nuxt.options.css.push("vuetify/styles/main.sass");
