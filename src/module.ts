@@ -22,12 +22,3 @@ export default defineNuxtModule<VuetifyOptions>({
     addPlugin(resolve(runtimeDir, "plugin"));
   },
 });
-
-declare module "@nuxt/schema" {
-  interface NuxtConfig {
-    vuetify?: VuetifyOptions;
-  }
-  interface NuxtOptions {
-    vuetify?: VuetifyOptions;
-  }
-}
