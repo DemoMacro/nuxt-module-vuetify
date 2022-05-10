@@ -1,6 +1,6 @@
 {
   "name": "nuxt-module-vuetify",
-  "version": "0.0.1-1",
+  "version": "0.0.1-2",
   "description": "Vuetify module for Nuxt 3 powered by Demo Macro.",
   "main": "./dist/module.cjs",
   "types": "./dist/types.d.ts",
