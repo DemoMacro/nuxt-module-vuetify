@@ -1,6 +1,6 @@
 {
   "name": "nuxt-module-vuetify",
-  "version": "0.0.1-7",
+  "version": "0.0.1-8",
   "description": "Vuetify module for Nuxt 3 powered by Demo Macro.",
   "main": "./dist/module.cjs",
   "types": "./dist/types.d.ts",
@@ -21,7 +21,7 @@
     "lint:prettier": "prettier --check . --ignore-path .gitignore",
     "lint": "pnpm lint:js && pnpm lint:prettier",
     "lintfix": "prettier --write --list-different . --ignore-path .gitignore && pnpm lint:js --fix",
-    "postinstall": "hooks install",
+    "prepare": "hooks install",
     "prepack": "nuxt-module-build"
   },
   "lint-staged": {
