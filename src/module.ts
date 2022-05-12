@@ -1,6 +1,9 @@
-import { resolve } from "path";
-import { fileURLToPath } from "url";
-import { defineNuxtModule, addPlugin, extendViteConfig } from "@nuxt/kit";
+import {
+  defineNuxtModule,
+  extendViteConfig,
+  addPluginTemplate,
+  createResolver,
+} from "@nuxt/kit";
 import { VuetifyOptions } from "vuetify";
 
 export default defineNuxtModule<VuetifyOptions>({
@@ -21,8 +24,12 @@ export default defineNuxtModule<VuetifyOptions>({
       config.define["process.env.DEBUG"] ||= false;
     });
 
-    const runtimeDir = fileURLToPath(new URL("./runtime", import.meta.url));
-    nuxt.options.build.transpile.push(runtimeDir);
-    addPlugin(resolve(runtimeDir, "plugin"));
+    // Create resolver to resolve relative paths
+    const { resolve } = createResolver(import.meta.url);
+    addPluginTemplate({
+      src: resolve("./runtime/plugin.ts"),
+      fileName: "vuetify.plugin.mjs",
+      options: nuxt.options["vuetify"],
+    });
   },
 });

@@ -3,7 +3,11 @@ import NuxtModuleVuetify from "..";
 
 export default defineNuxtConfig({
   modules: [NuxtModuleVuetify],
-  vuetify: {},
+  vuetify: {
+    theme: {
+      defaultTheme: "dark",
+    },
+  },
   typescript: {
     strict: true,
     tsConfig: {
