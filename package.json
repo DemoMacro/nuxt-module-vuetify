@@ -1,6 +1,6 @@
 {
   "name": "nuxt-module-vuetify",
-  "version": "0.0.1-6",
+  "version": "0.0.1-7",
   "description": "Vuetify module for Nuxt 3 powered by Demo Macro.",
   "main": "./dist/module.cjs",
   "types": "./dist/types.d.ts",
@@ -51,9 +51,7 @@
   },
   "homepage": "https://github.com/DemoMacro/nuxt-module-vuetify#readme",
   "dependencies": {
-    "@nuxt/kit": "^3.0.0-rc.2",
-    "sass": "^1.51.0",
-    "vuetify": "3.0.0-beta.1"
+    "@nuxt/kit": "^3.0.0-rc.2"
   },
   "devDependencies": {
     "@commitlint/cli": "^16.2.4",
@@ -64,6 +62,12 @@
     "eslint": "latest",
     "lint-staged": "^12.4.1",
     "nuxt": "3.0.0-rc.3",
-    "prettier": "^2.6.2"
+    "prettier": "^2.6.2",
+    "sass": "^1.51.0",
+    "vuetify": "3.0.0-beta.1"
+  },
+  "peerDependencies": {
+    "sass": "^1.51.0",
+    "vuetify": "3.0.0-beta.1"
   }
 }

@@ -11,13 +11,13 @@
 
 ```bash
 # npm
-$ npm install -D nuxt-module-vuetify
+$ npm install -D nuxt-module-vuetify vuetify@next sass
 
 # yarn
-$ yarn add -D nuxt-module-vuetify
+$ yarn add -D nuxt-module-vuetify vuetify@next sass
 
 # pnpm
-$ pnpm add -D nuxt-module-vuetify
+$ pnpm add -D nuxt-module-vuetify vuetify@next sass
 ```
 
 ## Usage
