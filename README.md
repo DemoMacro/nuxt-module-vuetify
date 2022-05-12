@@ -38,6 +38,10 @@ export default defineNuxtConfig({
 - Run `npm run dev:prepare` to generate type stubs.
 - Use `npm run dev` to start [playground](./playground) in development mode.
 
+## Alternative
+
+It is also recommended to use [@nuxtjs-alt/vuetify](https://www.npmjs.com/package/@nuxtjs-alt/vuetify), which is also referenced in part of the implementation of `nuxt-module-vuetify`.
+
 ## Credits
 
 - [Demo Macro](https://github.com/DemoMacro) - Always believe that good things are about to happen.
