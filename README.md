@@ -1,42 +1,18 @@
 # nuxt-module-vuetify
 
-![npm version](https://img.shields.io/npm/v/nuxt-module-vuetify)
-![npm downloads](https://img.shields.io/npm/dw/nuxt-module-vuetify)
-![npm license](https://img.shields.io/npm/l/nuxt-module-vuetify)
+![GitHub](https://img.shields.io/github/license/DemoMacro/nuxt-module-vuetify)
 [![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-2.1-4baaaa.svg)](https://www.contributor-covenant.org/version/2/1/code_of_conduct/)
 
 > Vuetify module for Nuxt 3 powered by Demo Macro.
 
-## Getting started
+## Packages
 
-```bash
-# npm
-$ npm install -D nuxt-module-vuetify vuetify@next sass
-
-# yarn
-$ yarn add -D nuxt-module-vuetify vuetify@next sass
-
-# pnpm
-$ pnpm add -D nuxt-module-vuetify vuetify@next sass
-```
-
-## Usage
-
-```ts
-import { defineNuxtConfig } from "nuxt";
-
-export default defineNuxtConfig({
-  modules: ["nuxt-module-vuetify"],
-  vuetify: {
-    // VuetifyOptions
-  },
-});
-```
+- [nuxt-module-vuetify](./packages/nuxt-module-vuetify/README.md)
 
 ## Development
 
 - Run `npm run dev:prepare` to generate type stubs.
-- Use `npm run dev` to start [playground](./playground) in development mode.
+- Use `npm run dev` to start [playground](../../playground/) in development mode.
 
 ## Alternative
 
