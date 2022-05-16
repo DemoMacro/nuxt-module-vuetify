@@ -1,0 +1,53 @@
+{
+  "name": "nuxt-module-vuetify",
+  "version": "0.0.1-8",
+  "description": "Vuetify module for Nuxt 3 powered by Demo Macro.",
+  "main": "./dist/module.cjs",
+  "types": "./dist/types.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/module.mjs",
+      "require": "./dist/module.cjs"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "dev:prepare": "nuxt-module-build --stub",
+    "prepack": "nuxt-module-build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DemoMacro/nuxt-module-vuetify.git"
+  },
+  "keywords": [
+    "nuxt",
+    "nuxt3",
+    "vue",
+    "vue3",
+    "module",
+    "vuetify"
+  ],
+  "author": {
+    "name": "Demo Macro",
+    "email": "abc@imst.xyz",
+    "url": "https://imst.xyz/"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/DemoMacro/nuxt-module-vuetify/issues"
+  },
+  "homepage": "https://github.com/DemoMacro/nuxt-module-vuetify#readme",
+  "dependencies": {
+    "@nuxt/kit": "^3.0.0-rc.2"
+  },
+  "devDependencies": {
+    "sass": "^1.51.0",
+    "vuetify": "3.0.0-beta.1"
+  },
+  "peerDependencies": {
+    "sass": "^1.51.0",
+    "vuetify": "3.0.0-beta.1"
+  }
+}

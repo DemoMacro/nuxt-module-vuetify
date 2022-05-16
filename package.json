@@ -1,28 +1,18 @@
 {
   "name": "nuxt-module-vuetify",
-  "version": "0.0.1-8",
+  "version": "0.0.0",
   "description": "Vuetify module for Nuxt 3 powered by Demo Macro.",
-  "main": "./dist/module.cjs",
-  "types": "./dist/types.d.ts",
-  "exports": {
-    ".": {
-      "import": "./dist/module.mjs",
-      "require": "./dist/module.cjs"
-    }
-  },
-  "files": [
-    "dist"
-  ],
+  "private": true,
   "scripts": {
+    "build": "pnpm -r prepack",
     "dev": "nuxt dev playground",
     "dev:build": "nuxt build playground",
-    "dev:prepare": "nuxt-module-build --stub && nuxt prepare playground",
+    "dev:prepare": "pnpm -r dev:prepare && nuxt prepare playground",
     "lint:js": "eslint --ext \".js,.mjs,.ts\" --ignore-path .gitignore",
     "lint:prettier": "prettier --check . --ignore-path .gitignore",
     "lint": "pnpm lint:js && pnpm lint:prettier",
     "lintfix": "prettier --write --list-different . --ignore-path .gitignore && pnpm lint:js --fix",
-    "prepare": "hooks install",
-    "prepack": "nuxt-module-build"
+    "postinstall": "githooks install"
   },
   "lint-staged": {
     "*.{js,mjs,ts}": "eslint --cache",
@@ -35,10 +25,10 @@
   "keywords": [
     "nuxt",
     "nuxt3",
-    "module",
-    "vuetify",
     "vue",
-    "vue3"
+    "vue3",
+    "module",
+    "vuetify"
   ],
   "author": {
     "name": "Demo Macro",
@@ -50,24 +40,16 @@
     "url": "https://github.com/DemoMacro/nuxt-module-vuetify/issues"
   },
   "homepage": "https://github.com/DemoMacro/nuxt-module-vuetify#readme",
-  "dependencies": {
-    "@nuxt/kit": "^3.0.0-rc.2"
-  },
   "devDependencies": {
     "@commitlint/cli": "^16.2.4",
     "@commitlint/config-conventional": "^16.2.4",
     "@funish/eslint-config-vue": "0.0.1-0",
-    "@funish/githooks": "0.0.2-0",
+    "@funish/githooks": "0.0.2-3",
     "@nuxt/module-builder": "latest",
     "eslint": "latest",
     "lint-staged": "^12.4.1",
     "nuxt": "3.0.0-rc.3",
     "prettier": "^2.6.2",
-    "sass": "^1.51.0",
-    "vuetify": "3.0.0-beta.1"
-  },
-  "peerDependencies": {
-    "sass": "^1.51.0",
-    "vuetify": "3.0.0-beta.1"
+    "typescript": "^4.6.4"
   }
 }
