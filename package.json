@@ -8,7 +8,7 @@
     "dev": "nuxt dev playground",
     "dev:build": "nuxt build playground",
     "dev:prepare": "pnpm -r dev:prepare && nuxt prepare playground",
-    "lint:js": "eslint --ext \".js,.mjs,.ts\" --ignore-path .gitignore",
+    "lint:js": "eslint . --ext \".js,.mjs,.ts\" --ignore-path .gitignore",
     "lint:prettier": "prettier --check . --ignore-path .gitignore",
     "lint": "pnpm lint:js && pnpm lint:prettier",
     "lintfix": "prettier --write --list-different . --ignore-path .gitignore && pnpm lint:js --fix",
