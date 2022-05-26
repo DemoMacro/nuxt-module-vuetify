@@ -27,8 +27,8 @@ export default defineNuxtModule<VuetifyOptions>({
     // Create resolver to resolve relative paths
     const { resolve } = createResolver(import.meta.url);
     addPluginTemplate({
-      src: resolve("./runtime/plugin.mjs"),
-      fileName: "vuetify.plugin.mjs",
+      src: resolve("./runtime/plugin.ts"),
+      fileName: "vuetify.plugin.ts",
       options: options,
     });
   },
