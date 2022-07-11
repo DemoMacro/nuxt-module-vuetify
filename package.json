@@ -43,7 +43,7 @@
   "devDependencies": {
     "@commitlint/cli": "17.0.2",
     "@commitlint/config-conventional": "17.0.2",
-    "@funish/eslint-config-vue": "0.0.1",
+    "@funish/eslint-config-vue": "0.0.3",
     "@funish/githooks": "0.0.3",
     "@nuxt/module-builder": "0.1.7",
     "eslint": "8.17.0",
