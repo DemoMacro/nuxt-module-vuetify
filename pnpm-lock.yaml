@@ -31,10 +31,10 @@ importers:
       '@nuxt/kit': 3.0.0-rc.4
       sass: 1.52.3
       vue: 3.2.37
-      vuetify: 3.0.0-beta.3
+      vuetify: 3.0.0-beta.6
     dependencies:
       '@nuxt/kit': 3.0.0-rc.4
-      vuetify: 3.0.0-beta.3_vue@3.2.37
+      vuetify: 3.0.0-beta.6_vue@3.2.37
     devDependencies:
       sass: 1.52.3
       vue: 3.2.37
@@ -6832,17 +6832,23 @@ packages:
       '@vue/server-renderer': 3.2.37_vue@3.2.37
       '@vue/shared': 3.2.37
 
-  /vuetify/3.0.0-beta.3_vue@3.2.37:
-    resolution: {integrity: sha512-as6G+6S6q4kfioc0wioJ+/DOLhIDGsA/ufaSwE8GHnxnoOmx+Usi+CLAh6UaZr1VEG7HVVtFV+gBXsk8pmljQg==}
+  /vuetify/3.0.0-beta.6_vue@3.2.37:
+    resolution: {integrity: sha512-eL8l4YdpB8ePWex1NkB35nqgWIJCsElTk4XzZEXeN7ECh5Qd1JqPwxEE+JVVC5e1+Ut2EQw+08ouLkeEk2uMow==}
     engines: {node: ^12.20 || >=14.13}
     peerDependencies:
       '@formatjs/intl': ^1.0.0 || ^2.0.0
-      vue: ^3.2.36
+      vite-plugin-vuetify: ^1.0.0-alpha.12
+      vue: ^3.2.0
       vue-i18n: ^9.0.0
+      webpack-plugin-vuetify: ^2.0.0-alpha.11
     peerDependenciesMeta:
       '@formatjs/intl':
         optional: true
+      vite-plugin-vuetify:
+        optional: true
       vue-i18n:
+        optional: true
+      webpack-plugin-vuetify:
         optional: true
     dependencies:
       vue: 3.2.37
