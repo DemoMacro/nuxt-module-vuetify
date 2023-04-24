@@ -1,4 +1,4 @@
-import { defineNuxtConfig } from "nuxt";
+import { defineNuxtConfig } from "nuxt/config";
 import NuxtModuleVuetify from "../packages/nuxt-module-vuetify";
 
 export default defineNuxtConfig({

@@ -28,7 +28,6 @@ export default defineNuxtModule<VuetifyOptions>({
     const { resolve } = createResolver(import.meta.url);
     addPluginTemplate({
       src: resolve("./runtime/plugin.mjs"),
-      fileName: "vuetify.plugin.mjs",
       options: options,
     });
   },
