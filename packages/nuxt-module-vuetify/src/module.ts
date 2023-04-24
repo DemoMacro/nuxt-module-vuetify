@@ -1,22 +1,20 @@
 import {
   defineNuxtModule,
   extendViteConfig,
-  addPluginTemplate,
   createResolver,
+  addPlugin,
 } from "@nuxt/kit";
 import { VuetifyOptions } from "vuetify";
+import { aliases, mdi } from "vuetify/iconsets/mdi";
 
-export default defineNuxtModule<VuetifyOptions>({
+export default defineNuxtModule({
   meta: {
     name: "nuxt-module-vuetify",
     configKey: "vuetify",
-    // Compatibility constraints
-    compatibility: {
-      nuxt: "^3.0.0",
-    },
   },
-  setup(options, nuxt) {
+  setup(options: VuetifyOptions, nuxt) {
     nuxt.options.css.push("vuetify/styles/main.sass");
+    nuxt.options.css.push("@mdi/font/css/materialdesignicons.css");
     nuxt.options.build.transpile.push("vuetify");
 
     extendViteConfig((config) => {
@@ -26,9 +24,17 @@ export default defineNuxtModule<VuetifyOptions>({
 
     // Create resolver to resolve relative paths
     const { resolve } = createResolver(import.meta.url);
-    addPluginTemplate({
-      src: resolve("./runtime/plugin.mjs"),
-      options: options,
+    addPlugin({
+      src: resolve("./runtime/plugin"),
     });
+  },
+  defaults: {
+    icons: {
+      defaultSet: "mdi",
+      aliases,
+      sets: {
+        mdi,
+      },
+    },
   },
 });

@@ -1,4 +1,7 @@
 {
   "private": true,
-  "name": "nuxt-playground-vuetify"
+  "name": "nuxt-playground-vuetify",
+  "devDependencies": {
+    "nuxt-module-vuetify": "workspace:*"
+  }
 }

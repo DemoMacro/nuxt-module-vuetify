@@ -40,11 +40,12 @@
   },
   "homepage": "https://github.com/DemoMacro/nuxt-module-vuetify#readme",
   "dependencies": {
+    "@mdi/font": "7.2.96",
     "@nuxt/kit": "3.4.2",
     "vuetify": "3.1.15"
   },
   "devDependencies": {
-    "@nuxt/module-builder": "^0.3.0",
+    "@nuxt/module-builder": "0.3.0",
     "sass": "1.62.0",
     "vue": "3.2.47"
   },
