@@ -47,7 +47,7 @@
   "devDependencies": {
     "@nuxt/module-builder": "0.3.0",
     "sass": "1.62.0",
-    "vue": "3.2.47"
+    "vue": "3.5.12"
   },
   "peerDependencies": {
     "sass": "1.52.3"
